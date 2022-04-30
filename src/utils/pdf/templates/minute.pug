@@ -1,0 +1,35 @@
+//- index.pug
+doctype html
+- var image = "../../"
+html
+    head
+        style
+            include minute.css
+    body
+        div(class="page")
+            div(class="general")
+               div(class="box")
+                 div(class="box-heading")
+                    img(src='https://lya-novedades.s3.amazonaws.com/images/LAELECTRONIC+Logo.png')
+                    div('box-heading-datas')
+                        p Fecha: #{date}
+                        p Motivo: #{motive}
+                        p ID: !{headerIdentifaier}
+
+               div(class="box-qr")
+                 img(src=qrSignEncripted)
+            div('box-decription')
+               p Descripción: 
+               p !{description}
+               br
+            div(class='box-firms')
+              p Participantes/firmas:
+                each val in participants
+                  if val.signedString
+                    div(class='box-firm-participant')
+                     img(src=val.signedString)
+                     p #{val.full_name}
+                  else 
+                    div(class='box-firm-participant')
+                     p No firmó
+                     p #{val.full_name}

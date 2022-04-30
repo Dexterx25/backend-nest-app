@@ -1,0 +1,27 @@
+* {
+  font-family: Helvetica;
+  margin: 1em;
+}
+div {
+  margin: 0;
+}
+.header {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  border-bottom: solid 1px black;
+  margin-bottom: 1em;
+  display: grid;
+  height: 60px;
+  width: 530px;
+}
+
+.minute-title {
+  font-weight: bold;
+  margin: auto;
+  font-size: 17.5px;
+}
+
+.version {
+  margin: auto;
+  font-size: 0.75em;
+}

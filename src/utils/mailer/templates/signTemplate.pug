@@ -1,0 +1,95 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='Content-Type' content='text/html charset=UTF-8')
+    title Email
+    style(type='text/css').
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        html,
+        body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+        }
+        * {
+        -ms-text-size-adjust: 100%;
+        }
+        img {
+        -ms-interpolation-mode: bicubic;
+        }
+        a {
+        text-decoration: none;
+        }
+        .ExternalClass {width: 100%;}
+center
+    table.main-table(cellspacing='0' cellpadding='0' border='0' style=' \
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.43);\
+    -moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.43);\
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.43);\
+    background-color: #F3F5F7;\
+    margin-top: 10px;\
+    max-width: 704px;')
+        tr.header-logo
+            td(width='704px' style='position: relative;')
+                br
+                center
+                    img(src='https://bonnadona-public.s3.amazonaws.com/assets/alicanto.png' alt='Alicanto' style="width:100px;")
+                br
+
+        tr.header-msg(width='704px' style='width: 100%; height: 100px; overflow: hidden; background-color: #FFBE5D;')
+            td(width='704px' style='width: 100%; height: 100px; overflow: hidden; background-color: #FFBE5D;')
+                center(style="color: white;\
+                font-weight: bolder; \
+                font-size: x-large; \
+                font-family: 'Poppins', sans-serif;")
+                    | #{headerTitle}
+        tr.greeting-text
+            td(style="text-align: justify;\
+            font-family: 'Poppins', sans-serif;\
+            padding: 20px 70px;\
+            color: #3f4a59;\
+            height: 100%")
+                | #{advertisement}
+        tr.middle-text(style='max-width: 100px;')
+            td  
+                div(style="text-align: justify;\
+                font-family: 'Poppins', sans-serif;\
+                padding: 10px 70px 40px 70px ;\
+                color: #3f4a59;")
+                    | #{message}
+        if(buttonTitle)
+            tr.button
+                td
+                    center
+                        a(href= url style="\
+                        -webkit-box-shadow: 0px 4px 17px -5px rgba(0,0,0,0.74);\
+                        -moz-box-shadow: 0px 4px 17px -5px rgba(0,0,0,0.74);\
+                        box-shadow: 0px 4px 17px -5px rgba(0,0,0,0.74);\
+                        font-family: 'Poppins', sans-serif;\
+                        background-color: #FFBE5D;\
+                        border-radius: 20px;\
+                        margin-bottom: 35px;\
+                        font-weight: bolder;\
+                        text-align: center;\
+                        padding: 4px 0px;\
+                        max-width: 257px;\
+                        font-size: 14pt;\
+                        cursor: pointer;\
+                        display: block;\
+                        line-height: 2;\
+                        color: white;\
+                        outline: none;\
+                        border: none;\
+                        ")
+                            | #{buttonTitle}
+        tr.footer-text
+            td(style="\
+            font-family: 'Poppins', sans-serif;\
+            color: grey;")
+                center
+                    | #{farewell}
+        tr.footer-img
+            td(style='height: 20px;')
+                div(style='height: 10px; background-color: #FFBE5D; margin-top: 10px')

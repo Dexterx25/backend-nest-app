@@ -1,0 +1,106 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='Content-Type' content='text/html charset=UTF-8')
+    title Email
+    style(type='text/css').
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        html,
+        body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+        }
+        * {
+        -ms-text-size-adjust: 100%;
+        }
+        img {
+        -ms-interpolation-mode: bicubic;
+        }
+        a {
+        text-decoration: none;
+        }
+        .ExternalClass {width: 100%;}
+center
+    table.main-table(cellspacing='0' cellpadding='0' border='0' style=' \
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.43);\
+    -moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.43);\
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.43);\
+    background-color: white;\
+    margin-top: 10px;\
+    max-width: 704px;')
+        tr.header-logo
+            td(width='704px' style='position: relative;')
+                br
+                center
+                    img(src='https://bonnadona-public.s3.amazonaws.com/assets/halcon.png' alt='Halcon')
+                br
+        tr.header-msg
+            td(width='704px' style='width: 100%; height: 100px; overflow: hidden; background-color: #3f4a59;')
+                center(style="color: white;\
+                font-weight: bolder; \
+                font-size: x-large; \
+                font-family: 'Poppins', sans-serif;")
+                    | #{headerTitle}
+        tr.middle-text(style='max-width: 100px;')
+            td  
+                br
+                p(style="text-align: justify;\
+                padding: 10px 70px;\
+                font-family: 'Poppins', sans-serif;")
+                    | #{message}
+        tr.email-text
+            td
+                br
+                span(style="text-align: justify;\
+                padding: 10px 0px 0px 70px;\
+                font-family: 'Poppins', sans-serif;\
+                color: #33cabb;\
+                font-weight: bolder;")
+                    | Correo: 
+                span(style="text-align: justify;\
+                font-family: 'Poppins', sans-serif;\
+                color: rgb(102, 102, 102);\
+                font-weight: bolder;")
+                    | #{email}
+        tr.button
+            td
+                br
+                br
+                center
+                    a(href= url style="\
+                    -webkit-box-shadow: 0px 4px 17px -5px rgba(0,0,0,0.74);\
+                    -moz-box-shadow: 0px 4px 17px -5px rgba(0,0,0,0.74);\
+                    box-shadow: 0px 4px 17px -5px rgba(0,0,0,0.74);\
+                    font-family: 'Poppins', sans-serif;\
+                    background-color: #33cabb;\
+                    border-radius: 20px;\
+                    font-weight: bolder;\
+                    text-align: center;\
+                    padding: 4px 0px;\
+                    max-width: 257px;\
+                    font-size: 14pt;\
+                    display: block;\
+                    line-height: 2;\
+                    color: white;\
+                    outline: none;\
+                    border: none;\
+                    ")
+                        | #{buttonTitle}
+        tr.footer-text
+            td
+                center
+                    br
+                    br
+                    span(style="color:gray; font-family: 'Poppins', sans-serif;")  &iquest;Necesitas ayuda?
+                    br
+                    span(style="color:gray; font-family: 'Poppins', sans-serif;")  Por favor escribenos a:
+                    br
+                    span(style="color:gray;font-family: 'Poppins', sans-serif; font-weight: bolder;") admin@halconpqrs.com
+                    br
+                    br
+        tr.footer-img
+            td(style='padding-top: 30px;')
+                img(style='margin-bottom: -5px;' src='https://bonadona-files.s3.amazonaws.com/Assets/1.png' alt='Halcon Logo')

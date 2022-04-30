@@ -1,0 +1,14 @@
+{
+  "type": "postgres",
+  "host": "100.0.0.233",
+  "port": 9200,
+  "username": "postgres",
+  "password": "postgres",
+  "database": "nextto",
+  "entities": ["./src/database/entities/**/*.entity{.ts, .js}"],
+  "migrationsTableName": "custom_migration_table",
+  "migrations": ["./migration/*.{js,ts}"],
+  "cli": {
+    "migrationsDir": "./migration/"
+  }
+}

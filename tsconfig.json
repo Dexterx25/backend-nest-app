@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": true,
+    "allowUnreachableCode": false,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "paths": {
+      "@src/database": ["libs/database/src"],
+      "@src/database/*": ["libs/database/src/*"],
+      "@src/utils": ["libs/utils/src"],
+      "@src/utils/*": ["libs/utils/src/*"],
+      "@src/middlewares": ["libs/middlewares/src"],
+      "@src/middlewares/*": ["libs/middlewares/src/*"],
+      "@src/guards": ["src/utils/guards/"],
+      "@src/guards/*": ["src/utils/guards/*"],
+      "@src/aws": ["src/configurations/AWS"],
+      "@src/aws/*": ["src/configurations/AWS/*"]
+    }
+  }
+}

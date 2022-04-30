@@ -1,0 +1,258 @@
+* {
+  font-family: Helvetica;
+  margin: 1em;
+}
+div {
+  margin: 0;
+}
+
+.box {
+  padding: 10px;
+  word-wrap: break-word;
+  height: auto;
+}
+.box-qr {
+  padding: 10px;
+  word-wrap: break-word;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.box-qr img {
+  width: 250px;
+  height: 250px;
+ }
+ .box-qr p {
+  text-align: center;
+  font-size: 9px;
+ }
+.box img {
+ width: 300px;
+ height: 300px;
+}
+.box-heading{
+ width: 300px;
+ height: 300px;
+}
+.box-heading img {
+  width: 300px;
+  height: 80px;
+  resize: auto;
+}
+.box-heading-datas{
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.box-decription{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  word-wrap: break-word;
+  height: auto;
+}
+.box-firms{
+  display: block;
+  text-align: left;
+  justify-content:flex-start;
+  align-items: left;
+  height: auto;
+  width: 100%;
+}
+.box-firms img {
+  width: 100px;
+  height: 100px;
+}
+.box-firm-participant{
+ 
+  width: 200px;
+  justify-content:flex-start;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  gap: 0;
+}
+.box-firm-participant img{
+  width: 250px;
+  height: 250px;
+  resize: auto;
+}
+.box-firm-participant p{
+  margin-top: -5em;
+  padding-top: -5em;
+}
+.box-heading{
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-rows: repeat(2, 1fr);
+}
+.non-bottom-box {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.general {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 60% 40%;
+  gap: 10px 10px;
+  width: 100%;
+  height: auto;
+  height: auto;
+}
+.date {
+  display: grid;
+  grid-template-columns: 2fr 2fr 3fr;
+}
+.border-right {
+  border-right: 1px solid black;
+  height: auto;
+}
+.agenda {
+  height: 13em;
+  display: grid;
+  grid-template-rows: 10fr 1fr;
+}
+.time {
+  display: grid;
+  grid-template-columns: 5fr 4fr 4fr;
+}
+.border-bottom {
+  border-bottom: 1px solid black;
+}
+
+ol {
+  padding-left: 5px;
+}
+
+li {
+  margin: 5px;
+}
+
+.text {
+  min-height: 3em;
+}
+
+.generalities {
+  font-size: 0.9em;
+}
+
+.attended-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: auto;
+  width: 15em;
+  width: 100%;
+}
+
+.attended {
+  margin: 0 1em;
+  width: 100%;
+  height: auto;
+}
+.attended img {
+  width: 100px;
+  height: 100px;
+}
+
+
+.members {
+  height: 33em;
+}
+
+.container1-1 {
+  display: grid;
+  margin: 0;
+  grid-template-columns: 1fr 1fr;
+  height: 250px;
+}
+
+.list {
+  margin: 0.5em;
+  padding: 0;
+}
+
+.border-top {
+  border-top: 1px solid black;
+}
+
+.line {
+  height: 1em;
+  padding: 5px;
+}
+
+.signatures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.signature {
+  height: 6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sign-field {
+  height: 4.5em;
+  width: 15em;
+}
+
+.item {
+  font-size: 0.9em;
+  margin: 0 1em;
+}
+
+.compromises {
+  display: grid;
+  grid-template-columns: 1fr 17fr 7fr 6fr;
+  margin: 0;
+}
+.oportunoties {
+  display: grid;
+  grid-template-columns: 17fr 7fr 3fr 4fr;
+  margin: 0;
+  height: auto;
+}
+th {
+  padding: 0.1em 0;
+  margin: 0;
+}
+
+td {
+  margin: 0;
+  padding: 0.1em 0.1em;
+}
+
+.sign-image {
+  max-height: 5em;
+  max-width: 10em;
+}
+
+.page {
+  height: auto;
+  justify-content: space-around;
+}
+
+.space {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.spacecompromises {
+  padding-bottom: 0.5em;
+}
+.space2compromises {
+  margin-top: 0.5em;
+}
+.space3compromises {
+  padding-top: 2em;
+}
+.withoutliststyle {
+  list-style: none;
+}
